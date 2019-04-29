@@ -1,0 +1,14 @@
+## https://genbattle.bitbucket.io/blog/2016/01/17/c++-travis-ci/ ##
+
+# Enable C++ support
+language: cpp
+# Compiler selection
+compiler:
+  - clang
+  - gcc
+# Build steps
+script:
+  - mkdir build
+  - cd build
+  - cmake .. && make
+  - ./test_icu
