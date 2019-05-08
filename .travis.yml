@@ -10,5 +10,5 @@ compiler:
 script:
   - mkdir build
   - cd build
-  - cmake .. && make
-  - ./test_icu
+  - cmake .. && cmake --build . --config Release
+  - ctest -C Release -V
