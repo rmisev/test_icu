@@ -10,6 +10,7 @@ endif()
 
 # Project settings
 project(test_icu LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 11)
 
 find_package(ICU REQUIRED COMPONENTS i18n uc)
 
