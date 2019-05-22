@@ -10,6 +10,7 @@ matrix:
       compiler: gcc
 
     - os: osx
+      osx_image: xcode10
       addons:
         homebrew:
           packages: [ icu4c ]
