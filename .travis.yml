@@ -10,6 +10,9 @@ matrix:
       compiler: gcc
 
     - os: osx
+      addons:
+        homebrew:
+          packages: [ icu4c ]
       compiler: clang
 
 # Build steps
