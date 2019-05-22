@@ -15,7 +15,7 @@ matrix:
         homebrew:
           packages: [ icu4c ]
       compiler: clang
-      env: [CMAKE_PREFIX_PATH=/usr/local/opt/icu4c]
+      env: [ICU_ROOT=/usr/local/opt/icu4c]
 
 # Build steps
 script:
